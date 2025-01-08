@@ -36,6 +36,7 @@ def zookeeper_by_id(id):
     response_body += f'<ul>Birthday: {zookeeper.birthday}</ul>'
 
     for animal in zookeeper.animals:
+        response_body += f'<ul>Animal: {animal.name}</ul>'
 
 @app.route('/enclosure/<int:id>')
 def enclosure_by_id(id):
