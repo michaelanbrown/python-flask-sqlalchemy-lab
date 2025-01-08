@@ -45,6 +45,7 @@ def enclosure_by_id(id):
     enclosure = Enclosure.query.filter(Enclosure.id == id).first()
     response_body = f''
     response_body += f'<ul>ID: {enclosure.id}</ul>'
-
+    response_body += f'<ul>Environment: {enclosure.environment}</ul>'
+    
 if __name__ == '__main__':
     app.run(port=5555, debug=True)
