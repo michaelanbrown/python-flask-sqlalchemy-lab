@@ -19,6 +19,7 @@ def index():
 def animal_by_id(id):
     animal = Animal.query.filter(Animal.id == id).first()
     response_body = f''
+    response_body += f'<ul>ID: {animal.id}</ul>'
 
 @app.route('/zookeeper/<int:id>')
 def zookeeper_by_id(id):
