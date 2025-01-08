@@ -31,6 +31,7 @@ def animal_by_id(id):
 def zookeeper_by_id(id):
     zookeeper = Zookeeper.query.filter(Zookeeper.id == id).first()
     response_body = f'
+    response_body += f'<ul>ID: {zookeeper.id}</ul>'
 
 @app.route('/enclosure/<int:id>')
 def enclosure_by_id(id):
