@@ -46,6 +46,7 @@ def enclosure_by_id(id):
     response_body = f''
     response_body += f'<ul>ID: {enclosure.id}</ul>'
     response_body += f'<ul>Environment: {enclosure.environment}</ul>'
+    response_body += f'<ul>Open to Visitors: {enclosure.open_to_visitors}</ul>'
     
 if __name__ == '__main__':
     app.run(port=5555, debug=True)
