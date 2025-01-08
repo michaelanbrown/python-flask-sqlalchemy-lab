@@ -38,6 +38,8 @@ def zookeeper_by_id(id):
     for animal in zookeeper.animals:
         response_body += f'<ul>Animal: {animal.name}</ul>'
 
+    return make_response(response_body)
+
 @app.route('/enclosure/<int:id>')
 def enclosure_by_id(id):
     return ''
