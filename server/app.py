@@ -25,6 +25,8 @@ def animal_by_id(id):
     response_body += f'<ul>Zookeeper: {animal.zookeeper.name}</ul>'
     response_body += f'<ul>Enclosure: {animal.enclosure.environment}</ul>'
 
+    return make_response(response_body)
+
 @app.route('/zookeeper/<int:id>')
 def zookeeper_by_id(id):
     return ''
