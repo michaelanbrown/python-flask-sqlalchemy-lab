@@ -21,7 +21,7 @@ class Enclosure(db.Model):
 
     id = db.Column(db.Integer, primary_key=True)
     environment = db.Column(db.String)
-     open_to_visitors = db.Column(db.Boolean)
+    open_to_visitors = db.Column(db.Boolean)
 
 class Animal(db.Model):
     __tablename__ = 'animals'
