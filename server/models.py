@@ -33,3 +33,4 @@ class Animal(db.Model):
     species = db.Column(db.String)
 
     zookeeper_id = db.Column(db.Integer, db.ForeignKey('zookeepers.id'))
+    enclosure_id = db.Column(db.Integer, db.ForeignKey('enclosures.id'))
