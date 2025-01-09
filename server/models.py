@@ -12,6 +12,7 @@ class Zookeeper(db.Model):
 
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String)
+    birthday = db.Column(db.String)
 
 class Enclosure(db.Model):
     __tablename__ = 'enclosures'
