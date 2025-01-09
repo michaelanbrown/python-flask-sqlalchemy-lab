@@ -14,6 +14,8 @@ class Zookeeper(db.Model):
     name = db.Column(db.String)
     birthday = db.Column(db.String)
 
+    animals = db.relationship('Animal', back_populates='zookeeper')
+
 class Enclosure(db.Model):
     __tablename__ = 'enclosures'
 
